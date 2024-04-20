@@ -16,4 +16,5 @@
 
 3. Execute testng.xml and find report from Reports folder
 
-4. Selenium, Maven, TestNG, POM, Java, Extent Reports, Log4j
+4. Used tools :
+5.   Selenium, Maven, TestNG, POM, Java, Extent Reports, Log4j
