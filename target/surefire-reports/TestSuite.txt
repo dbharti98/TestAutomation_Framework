@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 1, Errors: 0, Skipped: 8, Time elapsed: 1.257 sec <<< FAILURE! - in TestSuite
+launchApplication(com.test.login.TestCases)  Time elapsed: 1.147 sec  <<< FAILURE!
+java.lang.UnsupportedClassVersionError: org/openqa/selenium/remote/http/jdk/JdkHttpClient$Factory has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0
+

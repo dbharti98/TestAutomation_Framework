@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Sauce Demo Suite]" parallel="methods">
+  <parameter name="browser" value="CHROME"/>
+  <listeners>
+    <listener class-name="com.saucedemo.utilities.TestListener"/>
+  </listeners>
+  <test name="Sauce Demo Suite">
+    <classes>
+      <class name="com.test.login.TestCases">
+        <methods>
+          <include name="userLogin"/>
+          <include name="menuBar"/>
+          <include name="addToCart"/>
+        </methods>
+      </class> <!-- com.test.login.TestCases -->
+    </classes>
+  </test> <!-- Sauce Demo Suite -->
+  <test name="Sauce Demo Suite(failed)" parallel="methods">
+    <classes>
+      <class name="com.test.login.TestCases">
+        <methods>
+          <include name="userLogin"/>
+          <include name="launchApplication"/>
+          <include name="menuBar"/>
+          <include name="addToCart"/>
+        </methods>
+      </class> <!-- com.test.login.TestCases -->
+    </classes>
+  </test> <!-- Sauce Demo Suite(failed) -->
+</suite> <!-- Failed suite [Sauce Demo Suite] -->

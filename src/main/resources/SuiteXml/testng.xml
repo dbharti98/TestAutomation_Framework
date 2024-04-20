@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sauce Demo Suite" verbose="1" parallel="methods" thread-count="1">
+    <listeners>
+        <listener class-name="com.saucedemo.utilities.TestListener"/>
+    </listeners>
+    <parameter name="browser" value="CHROME"/>
+    <test name="Sauce Demo Suite">
+        <classes>
+            <class name="com.test.login.TestCases">
+                <methods>
+                    <include name="userLogin"/>
+                    <include name="menuBar"/>
+                    <include name="addToCart"/>
+                </methods>
+            </class>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
